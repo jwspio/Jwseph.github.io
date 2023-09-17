@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainreaderfr</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body {
+        background-color: #1d2b3a;
+
+    }
+    .johnkent {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: lavender;
+    }
+
+    .credits {
+        opacity: 0.7;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: lavenderblush;
+    }
+
+
+
+    .introtxt{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;
+        margin: 10px;
+        color: lightblue;
+    }
+
+    .johnw {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 250px;
+    }
+
+    .johnw input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid cyan;
+        background: #131e2a;
+        border-radius: 5px;
+        outline: none;
+        color:  #fff;
+        font-size: 1em;
+
+    }
+
+
+    .johnw span {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        color: darkcyan;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    .johnw input:valid ~ span,
+    .johnw input:focus ~ span
+    {
+        color: darkcyan;
+        transform: translateX(10px) translateY(-7px);
+        font-size: 0.65em;
+        pad: 0 10px;
+    }
+
+    .button1{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #131e2a;
+        width: 225px;
+        padding: 10px;
+        border-radius: 5px;
+        color: darkcyan;
+        border-color: lightskyblue;
+
+    }
+    .contact{
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+    }
+    .forg {
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translate(-50%,-50%);
+    }
+
+</style>
+</head>
+
+
+<body>
+    <h1 class="johnkent">"Greetings! Stranger"</h1>
+    <h3 class="credits">Brein waev by Joseph P.</h3>
+    <p class="introtxt">Hey there! <br> this is the brein waev ananlyzer <br> this is just a "funny" joke site made for a school project<br> yes the incorrect spellings are intentional for the joke.</p>
+
+    <div class="johnw">
+        <input type="text" id="john">
+        <span>What are you thinking? </span>
+    </div>
+
+    <button onclick="mygyatt()" class="button1">Read yo brain
+    </button>
+
+    <p class="contact">If you have any questions or suggestions?<br> Contract me on discord: Viektor#8074 </p>
+
+    <img src="awdwdad.png" class="forg">
+    
+     
+    <script>
+    function mygyatt() {
+        var x = document.getElementById("john").value;
+        alert("analyzing brainwaves...")
+        alert("you are thinking of..")
+        alert(x)
+    }
+    </script>
+
+
+</body>
+</html>
